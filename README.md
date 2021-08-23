@@ -1,2 +1,2 @@
 # Project-movies.app
- Simple project created to use APIs for the first time. This project uses an movies API to show several trending movies e several details about them.
+ Simple project created to use an API for the first time. This project uses a movies API to show recently released movies and several details about them.
