@@ -1,10 +1,11 @@
-const APIURL = 'https://api.themoviedb.org/3/movie/now_playing?api_key=109af8b9604416e4280edadf766cea48&page=1';
+const APIURL = `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&page=1`;
 
 //&language=pt-BR
+console.log(API_KEY)
 
 const IMGPATH = 'https://image.tmdb.org/t/p/w1280'; 
 
-const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?&api_key=109af8b9604416e4280edadf766cea48&query="
+const SEARCHAPI = `https://api.themoviedb.org/3/search/movie?&api_key=${API_KEY}&query=`;
 
 const main = document.querySelector('main');
 const form = document.getElementById('form');
