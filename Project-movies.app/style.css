@@ -1,42 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
-
+/*amarelo: #f2b833
+cinza escuro: #252629
+cinza claro: #56565a
+*/
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
-    background-color: #22254b;
+    background-color: #252629;
     font-family: "Poppins", sans-serif;
     margin: 0;
 }
 
+/*HEADER-----------------------*/
 header {
-    background-color: #373b69;
+    background-color: #56565a;
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: #f2b833;
+    font-size: 35px;
+    text-decoration: none;
+    margin: 5px 0;
 }
 
 .search {
     background-color: transparent;
-    border: 2px solid #22254b;
+    border: 2px solid #f2b833;
     border-radius: 50px;
-    color: #fff;
+    color: black;
     font-family: inherit;
     font-size: 1rem;
     padding: 0.5rem 1rem;
+    margin: 10px 0;
     
 }
 
 .search::placeholder {
-    color: #7278c5;
+    color: #f2b833;
 }
 
 .search:focus {
-    background-color: #22254b;
+    background-color: #f2b833;
     outline: none;
 }
 
+
+
+/*MAIN------------------*/
 main {
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +63,7 @@ main {
 }
 
 .movie {
-    background-color: #373b69;
+    background-color: #f2b833;
     border-radius: 3px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -58,7 +77,7 @@ main {
 }
 
 .movie-info {
-    color: #eee;
+    color: #56565a;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,10 +90,13 @@ main {
 }
 
 .movie-info span {
-    background-color: #22254b;
+    background-color: #252629;
     border-radius: 3px;
     font-weight: bold;
     padding: 0.25rem 0.2rem;
+    text-align: center;
+    min-width: 35px;
+    
 }
 
 .movie-info span.green {
@@ -87,8 +109,9 @@ main {
     color: rgb(189, 42, 42);
 }
 
+/*OVERVIEW-------------------*/
 .overview {
-    background-color: #fff;
+    background-color: rgba(236, 236, 236, 0.918);
     padding: 2rem;
     position: absolute;
     max-height: 100%;
